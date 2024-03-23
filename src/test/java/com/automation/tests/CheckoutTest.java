@@ -22,7 +22,7 @@ public class CheckoutTest extends TestBase {
         infoPage.setPostalCode(ExcelFileManager.setDataFromExcelFile(4,1));
         infoPage.clickContinue();
         checkoutStepTwo.clickFinish();
-        Reporter.log("Failed Test case");
+        Reporter.log("Success Test case");
         Assert.assertEquals("Thank you for your order!",checkoutCompletePage.getSuccessMessage());
         Assert.assertTrue(checkoutCompletePage.isSuccessMessageDisplayed());
 
