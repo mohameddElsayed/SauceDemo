@@ -17,9 +17,6 @@
         <webdrivermanager.version>3.6.2</webdrivermanager.version>
         <testng.version>7.4.0</testng.version>
         <rest-assured.version>4.3.3</rest-assured.version>
-        <allure-testng.version>2.13.8</allure-testng.version>
-        <allure-maven.version>2.10.0</allure-maven.version>
-        <allure-maven-report.version>2.10.0</allure-maven-report.version>
         <extentreports.version>5.0.6</extentreports.version>
         <poi-ooxml.version>4.0.1</poi-ooxml.version>
         <commons-io.version>2.7</commons-io.version>
@@ -53,6 +50,11 @@
             <version>${rest-assured.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.automation-remarks</groupId>
+            <artifactId>video-recorder-testng</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
@@ -72,15 +74,11 @@
             <artifactId>commons-io</artifactId>
             <version>${commons-io.version}</version>
         </dependency>
-        <dependency>
-            <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-testng</artifactId>
-            <version>${allure-testng.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
-            <version>${extentreports.version}</version>
+            <version>4.0.0</version>
         </dependency>
 
         <dependency>
@@ -99,11 +97,6 @@
             <version>${slf4j.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.github.automatedowl</groupId>
-            <artifactId>allure-environment-writer</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
@@ -114,14 +107,6 @@
     <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <groupId>io.qameta.allure</groupId>
-                    <artifactId>allure-maven</artifactId>
-                    <version>${allure-maven.version}</version>
-                    <configuration>
-                        <reportVersion>${allure-maven-report.version}</reportVersion>
-                    </configuration>
-                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
