@@ -15,5 +15,9 @@ for automation task
 * This is one E2e Scenario : 
     - Checkout
   
-* Extent Report generated after running the test case test-output folder --> emailable-report.html
+* All tests are recorded as video located in Video directory with .avi format with test name+run time.
+
+if you want to record only failed test cases just comment below line in BaseTest class System.setProperty("video.save.mode", RecordingMode.ALL.toString());
+Extent Report generated after running the test cases with name : Vois GUI Automation + runtime - every test case in the report has a screenshot for the last step in the testcase
  
+![Execution report](https://github.com/mohameddElsayed/SauceDemo/assets/66242513/c64afc06-0706-4198-84af-1d160c3cf8ee)
