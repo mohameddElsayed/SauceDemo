@@ -1,5 +1,5 @@
 # This is a Framework for SauceDemo
-- Selenium Framework project using Java , Maven and TestNG
+- Selenium Framework project using Java, Maven, and TestNG
 for automation task 
 
 # Tech Stach:
@@ -8,7 +8,7 @@ for automation task
 - Maven 
 - TestNG 
 - Extent Report for reporting in HTML5 format
-- IDE : IntelliJ
+- IDE: IntelliJ
 
 # Test Flow
 * Sign in + Add to cart + Checkout
@@ -19,5 +19,7 @@ for automation task
 
 if you want to record only failed test cases just comment below line in BaseTest class System.setProperty("video.save.mode", RecordingMode.ALL.toString());
 Extent Report generated after running the test cases with name : Vois GUI Automation + runtime - every test case in the report has a screenshot for the last step in the testcase
- 
+
+
+ # Execution report
 ![Execution report](https://github.com/mohameddElsayed/SauceDemo/assets/66242513/c64afc06-0706-4198-84af-1d160c3cf8ee)
