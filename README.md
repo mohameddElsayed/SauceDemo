@@ -10,7 +10,7 @@ for automation task
 - Extent Report for reporting in HTML5 format
 - IDE: IntelliJ
 
-# Test Flow
+# Test Flow :
 * Sign in + Add to cart + Checkout
 * This is one E2e Scenario : 
     - Checkout
